@@ -2,10 +2,9 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   body{
-    min-height: 100vh;
+    min-height: 200vh;
     font-size: 16px;
     color: ${ props => props.theme.colors.text};
-    transition: background 0.3s, color 0.3s, border 0.3s; 
     font-weight: 500;
   }
   * {
@@ -19,6 +18,10 @@ export const GlobalStyle = createGlobalStyle`
   }
   button {
     background: none;
+    font-family: inherit;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
   }
   a {
     text-decoration: none;

@@ -6,6 +6,7 @@ interface theme {
     surface: string,
 		text: string,
     border: string,
+    white: string,
 	} 
 }
 

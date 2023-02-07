@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Plus_Jakarta_Sans } from '@next/font/google'
+import { Header } from '@/components/Header'
 
 const font = Plus_Jakarta_Sans({ subsets: ['latin'] })
 
@@ -13,6 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={font.className}>
+        <Header />
       </main>
     </>
   )

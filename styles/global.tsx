@@ -2,7 +2,9 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   body{
-    min-height: 200vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+    min-height: 100vh;
     font-size: 16px;
     color: ${ props => props.theme.colors.text};
     font-weight: 500;

@@ -32,7 +32,7 @@ export const HeroSection = styled.div`
 				content: "";
 				position: absolute;
 				width: 100%;
-				height: 1px;
+				height: 2px;
 				bottom: 0;
 				left: 0;
 				background: ${props => props.theme.colors.border};

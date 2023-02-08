@@ -8,6 +8,7 @@ const theme = {
     surface: '#F0F8FF',
     text: '#1C3C50',
     border: '#C8D4DD',
+    white: '#FFFFFF',
   }
 }
 

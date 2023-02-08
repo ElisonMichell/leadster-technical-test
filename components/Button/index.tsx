@@ -1,14 +1,13 @@
 import { ButtonHTMLAttributes } from 'react';
-import { Container } from './styles'
+import { Container, StyleProps } from './styles'
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, StyleProps {
   title: string;
-  selected?: boolean;
 }
 
-export function Button({title, selected, ...props}:ButtonProps) {
+export function Button({title, selected, rounded, ...props}:ButtonProps) {
   return(
-    <Container selected={selected} {...props}>
+    <Container rounded={rounded} selected={selected} {...props}>
       {title}
     </Container>
   )

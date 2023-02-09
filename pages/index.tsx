@@ -8,6 +8,7 @@ import { OptionList } from '@/components/OptionList'
 import { Card } from '@/components/Card'
 import { Button } from '@/components/Button'
 import { LeadBanner } from '@/components/LeadBanner'
+import { Footer } from '@/components/Footer'
 
 const font = Plus_Jakarta_Sans({ subsets: ['latin'] })
 
@@ -67,6 +68,7 @@ export default function Home() {
           </NavBar>
         </Content>
         <LeadBanner />
+        <Footer />
       </main>
     </>
   )

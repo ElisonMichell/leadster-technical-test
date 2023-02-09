@@ -7,6 +7,7 @@ interface theme {
 		text: string,
     border: string,
     white: string,
+    graytext: string,
 	} 
 }
 

@@ -1,12 +1,17 @@
 import styled from 'styled-components'
 
+export const Root = styled.div`
+  background: ${props => props.theme.colors.surface};
+	padding: 4rem;
+`
+
 export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1440px;
+  margin: auto;
   gap: 5rem;
-  background: ${props => props.theme.colors.surface};
-	padding: 4rem;
 `
 
 export const Chart = styled.div`

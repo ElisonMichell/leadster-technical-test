@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Container, Options, Order } from './styles'
 import { Button } from '../Button'
-import { Select } from '../Select'
+import { CaretDown } from 'phosphor-react'
 
 export function OptionList() {
   const [selectedOption, setSelectedOption] = useState('agencias')
@@ -46,7 +46,7 @@ export function OptionList() {
       </Options>
       <Order>
         Ordenar por
-        <Select/>
+        <Button title='Data de Publicação' variant='secondary' icon={<CaretDown size={16} weight="fill" />}/>
       </Order>
     </Container>
   )

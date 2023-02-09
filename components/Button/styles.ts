@@ -7,9 +7,13 @@ export interface StyleProps {
 }
 
 export const Container = styled.button<StyleProps>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
   padding: 0.5rem 0.875rem;
   border-radius: ${props => props.rounded ? '3rem' : '0.5rem'};
-  font-weight: 600;
+  font-weight: 500;
   transition: color 0.2s, border 0.2s;
 
   ${props => props.variant === 'primary' && css<StyleProps>`

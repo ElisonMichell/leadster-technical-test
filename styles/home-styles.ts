@@ -30,4 +30,8 @@ export const NavBar = styled.nav`
   gap: 0.5rem;
   font-weight: bold;
   margin-top: 2rem;
+
+  div {
+    display: flex;
+  }
 `

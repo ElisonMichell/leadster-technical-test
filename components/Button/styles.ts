@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 export interface StyleProps {
   selected?: boolean;
   rounded?: boolean;
-  variant?: 'primary' | 'secondary' | 'tertiary'
+  variant?: 'primary' | 'secondary' | 'tertiary' | 'text'
 }
 
 export const Container = styled.button<StyleProps>`
@@ -43,6 +43,7 @@ export const Container = styled.button<StyleProps>`
     height: 2.5rem;
     border: ${props => props.selected && '1px solid' + props.theme.colors.primary};
     color: ${props => props.selected && props.theme.colors.primary};
+    font-weight: ${props => props.selected && '900'};
 
     ${props => !props.selected && css`
       :hover {
@@ -50,5 +51,17 @@ export const Container = styled.button<StyleProps>`
         border-color: ${props => props.theme.colors.primary};
       }
     `}
+  `}
+
+  ${props => props.variant === 'text' && css<StyleProps>`
+    width: max-content;
+    padding: 0;
+    color: ${props => props.theme.colors.graytext};
+    font-weight: 500;
+    font-size: 1rem;
+
+    :hover {
+      color: ${props => props.theme.colors.primary};
+    }
   `}
 `

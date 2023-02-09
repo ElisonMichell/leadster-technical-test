@@ -39,9 +39,15 @@ export function Footer() {
         <address className='links'>
           <span>Siga a Leadster</span>
           <div className='social-media'>
-            <a><Image src={linkedin} alt='linkedin button' width={16}/></a>
-            <a><Image src={facebook} alt='facebook button' width={16}/></a>
-            <a><Image src={instagram} alt='instagram button' width={16}/></a>
+            <a href='https://www.linkedin.com/company/leadster-platform/' target={'_blank'} rel={'noreferrer'}>
+              <Image src={linkedin} alt='linkedin button' width={16}/>
+            </a>
+            <a href='https://www.instagram.com/leadster.com.br/' target={'_blank'} rel={'noreferrer'}>
+              <Image src={facebook} alt='facebook button' width={16}/>
+            </a>
+            <a href='https://www.facebook.com/leadsterplatform/' target={'_blank'} rel={'noreferrer'}>
+              <Image src={instagram} alt='instagram button' width={16}/>
+            </a>
           </div>
           <p><b>Email:</b> contato@leadster.com.br</p>
           <p><b>Telefone:</b> (42) 98828-9851</p>
@@ -49,7 +55,7 @@ export function Footer() {
       </Content>
       <FooterLine>
         <div className='content'>
-          <p>Copyright © 2015 - 2022 Todos os direitos reservados | <a>Leadster</a></p>
+          <p>Copyright © 2015 - 2022 Todos os direitos reservados | <a href='https://leadster.com.br/'>Leadster</a></p>
           <address>Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000 | Termos de uso</address>
         </div>
       </FooterLine>

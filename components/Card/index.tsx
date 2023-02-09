@@ -2,9 +2,11 @@ import Image from 'next/image'
 import { Container, ImageContainer } from './styles'
 import thumbnail from '/assets/thumbnail.png'
 import play from '/assets/play.svg'
-export function Card() {
+import { ButtonHTMLAttributes } from 'react'
+
+export function Card({...props}:ButtonHTMLAttributes<HTMLButtonElement>) {
   return(
-    <Container>
+    <Container {...props}>
       <ImageContainer>
         <Image src={thumbnail} alt='card thumbnail' unoptimized/>
         <Image className='play-button' src={play} alt='play'/>
